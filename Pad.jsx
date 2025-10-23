@@ -1,4 +1,3 @@
-// Pad.js
 import React from "react"
 
 export default function Pad(props) {
