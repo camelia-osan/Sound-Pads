@@ -24,8 +24,8 @@ This project demonstrates state management, parent–child component communicati
 ### Screenshots
 **Desktop View**
 
-![Desktop View](screenshots/Desktop.PNG)
+![Desktop View](screenshots/Desktop.png)
 
 **Mobile View**  
 
-![Mobile View](screenshots/Mobile.PNG)
+![Mobile View](screenshots/Mobile.png)
