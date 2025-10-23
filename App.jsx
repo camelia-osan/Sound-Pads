@@ -3,6 +3,18 @@ import padsData from "./pads"
 import Pad from "./Pad"
 
 export default function App() {
+    // unlock audio on first user gesture
+    React.useEffect(() => {
+        const unlock = () => {
+            const a = new Audio()
+            a.muted = true
+            a.play().catch(() => { })
+            window.removeEventListener('pointerdown', unlock)
+        }
+        window.addEventListener('pointerdown', unlock, { once: true })
+        return () => window.removeEventListener('pointerdown', unlock)
+    }, [])
+
     const [pads, setPads] = React.useState(padsData)
 
     // turn a pad on
